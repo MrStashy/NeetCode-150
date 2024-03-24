@@ -18,6 +18,6 @@
 
 
 function anagramCheck(s, t) {
-    return s.split('').toSorted().toString() === t.split('').toSorted().toString()
+    return s.split('').toSorted().join() === t.split('').toSorted().join()
 }
 
