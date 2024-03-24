@@ -19,11 +19,9 @@
 // 1 <= nums.length <= 105
 // -109 <= nums[i] <= 109
 
-const nums = [1, 2, 3, 1]
 
 function dupeChecker(arr) {
     const numSet = new Set(nums)
     return numSet.size !== arr.length
 }
 
-console.log(dupeChecker(nums))
