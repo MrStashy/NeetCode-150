@@ -31,15 +31,9 @@ const groupAna = (arr) => {
                 j--
             }
         }
-        console.log('in')
         resultArr.push(holdingArr)
         holdingArr = []
     }
     return resultArr
 }
 
-const emptyInput = ["","",""]
-const fullInput = ["eat","tea","tan","ate","nat","bat"]
-
-console.log(groupAna(emptyInput))
-console.log(groupAna(fullInput))
