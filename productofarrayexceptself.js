@@ -19,11 +19,21 @@
 // -20 <= nums[i] <= 20
 
 function productExceptSelf(arr) {
+    const resultArr = []
 
-    const result = arr.reduce((a, b) => a * b)
-    return result
+    for (let i = 0; i < arr.length; i++) {
+        
+        resultArr.push(arr.reduce((a, b, index) => {
+            if (index === i) {
+              return a;
+            }
+            return a * b;
+          }, 1));
+    }
+
+  return resultArr;
 }
 
-const testArr = [1, 5, 2, 9]
+const testArr = [1, 5, 2, 0, 10];
 
-console.log(productExceptSelf(testArr))
+console.log(productExceptSelf(testArr));
