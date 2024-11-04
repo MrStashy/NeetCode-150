@@ -8,4 +8,4 @@ function isPalindrome(string) {
   );
 }
 
-console.log(isPalindrome(testInput));
+
